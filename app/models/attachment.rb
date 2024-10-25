@@ -530,7 +530,7 @@ class Attachment < ActiveRecord::Base
       self.namespace = infer_namespace
     end
 
-    self.media_entry_id ||= "maybe" if new_record? && previewable_media?
+    # self.media_entry_id ||= "maybe" if new_record? && previewable_media?
   end
   protected :default_values
 
